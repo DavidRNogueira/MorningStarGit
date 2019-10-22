@@ -64,7 +64,7 @@ background-image:url("Components/Home/GarageDoorPhotos3.jpg");
 background-position:center;
 background-size: cover;
 width: 100vw;
-height: 100vh;
+height:100vh;
 background-repeat:no-repeat;
 display:grid;
 grid-auto-columns: 1fr;
@@ -274,6 +274,7 @@ font-size: 1vw;
 margin-top: 0;
 }
 
+
 .homehr{
   border: solid .5px black;
   width: 90%;
@@ -316,32 +317,28 @@ margin-top: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "left BBB right"; 
+  "left BBB"; 
   height:20vh;
   
 }
 
-.footerleft{
+.footertext{
   align-self: center;
   justify-self: left;
 grid-area:left;
 color: white;
 padding-left: 5vw;
+font-size:1.25em;
 }
 
-.footerright{
-  justify-self: right;
-  align-self: center;
-padding-right: 5vw;
-  grid-area:right;
-  color: white;
 
-}
 
 .footerimg{
   width:10vw;
   grid-area: BBB;
   align-self: center;
+  justify-self: right;
+  margin-right: 10vw;;
 
 }
 
@@ -432,7 +429,81 @@ padding-right: 5vw;
   width:50%;
 }
 
-@media(max-width:700px){
+
+
+@media(max-width:1050px){
+  .logo{
+    width:10em;
+    margin:0;
+  }
+  .bannertext{
+    font-size:8em;
+  }
+  
+  #reviewtext{
+    font-size: 1.25em;
+    padding-top: .75em;;
+  }
+
+  .navbar{
+    height:6em
+  }
+  
+  .navbarlinks{
+    font-size:1.5em;
+    margin-right: 1em;
+    
+ 
+  }
+
+  .navbarlinks a{
+    margin:.5em;
+  }
+
+  .products{
+    padding-bottom: 0;
+  }
+
+  .footer{
+    height:8em;
+  }
+
+  .footertext{
+    font-size: 1.5em;
+  
+  }
+  .footerimg{
+    width:9em;
+  }
+  .navbarlinks span{
+    display:none;
+  }
+  .aboutustext{
+    font-size:1em;
+  }
+  .aboutusimg{
+    padding-top:3em;
+    width:12em;
+  }
+  .aboutusheader{
+    font-size:2.75em;
+    align-self: center;
+  }
+}
+
+
+
+
+@media(max-width:600px){
+
+  .bannertext{
+font-size:3em;  }
+
+.navbar{
+  position:fixed;
+  top:93.5vh;
+  width:100vw;
+}
   .navbarlinks{
     font-size:3.5vw;
  
@@ -499,7 +570,7 @@ padding-right: 5vw;
 
     .warning{
       text-align: center;
-      margin-top: 20vh;
+      margin: 20vh auto auto auto;
       width:90%;
     }
 
@@ -521,10 +592,11 @@ padding-right: 5vw;
     }
 
     .footerimg{
-      display:none;
+    width:20vw;
     }
     .footer{
-      grid-template-areas: "left right";
+      grid-template-areas: "left BBB";
+      padding-bottom: 5vh;;
     }
 
     .aboutus{
@@ -546,4 +618,86 @@ padding-right: 5vw;
     .aboutusheader{
       font-size: 7vw;
     }
+    .footertext{
+      font-size:1em;
+    }
+}
+
+@media(max-width:420px){
+  .navbarlinks{
+    margin-right:.3em ;
+  }
+  .navbarlinks a{
+    margin:.4em;
+  }
+ .logo{
+   width:5em;
+ }
+  .navbar{
+    z-index:999 ;
+    position:fixed;
+    top:94vh;
+    width:100vw;
+  }
+
+  .bannertext{
+    font-size:3em;
+  }
+
+.products{
+  display:none;
+}
+
+.homehr{
+  display:none;
+}
+ 
+.footer{
+  padding-bottom: 3vh;
+}
+
+}
+
+@media(max-width:375px){
+  .navbarlinks{
+    margin-right:.3em ;
+  }
+  .navbarlinks a{
+    margin:.3em;
+  }
+  .navbar{
+    
+    top:94vh;
+    
+  }
+}
+@media(max-width:360px){
+  .navbarlinks{
+    margin-right:.1em ;
+  }
+  .navbarlinks a{
+    margin:.2em;
+  }
+  .navbar{
+    
+    top:92vh;
+    
+  }
+}
+@media(max-width:340px){
+  .navbarlinks{
+    margin-right:.3em ;
+  }
+  .navbarlinks a{
+    margin:.2em;
+  }
+  .navbar{
+    
+    top:92vh;
+    
+  }
+
+  .footer{
+    padding-bottom: 7vh;
+  }
 }

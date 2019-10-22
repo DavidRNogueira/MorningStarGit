@@ -89,9 +89,8 @@ const Home = () =>{
             </div> 
 
             <div className="footer">
-                <p className="footerleft">Morning Star Garage Doors © 2019. All Rights Reserved.</p>
+                <p className="footertext">Morning Star Garage Doors © 2019. All Rights Reserved.</p>
                 <img className="footerimg" src={BBB} alt="BBB"/>
-                <p className="footerright"><a href="https://www.linkedin.com/in/david-nogueira-919289192/" target="_blank" rel="noopener noreferrer">Designed by <span>David Nogueira</span></a></p>
             </div>
             
         </div>
