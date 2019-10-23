@@ -257,8 +257,7 @@ grid-template-areas:
 }
 #reviewtext{
   font-size:2vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  
 }
 
 .reviewimages{
@@ -313,7 +312,7 @@ margin-top: 0;
 }
 
 .footer{
-  background-color:black;
+  background-color:gray;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -636,7 +635,7 @@ font-size:3em;  }
   .navbar{
     z-index:999 ;
     position:fixed;
-    top:94vh;
+    top:92vh;
     width:100vw;
   }
 
@@ -653,7 +652,10 @@ font-size:3em;  }
 }
  
 .footer{
-  padding-bottom: 3vh;
+  padding-bottom: 3em;
+}
+#reviewtext{
+  font-size:.75em;
 }
 
 }
