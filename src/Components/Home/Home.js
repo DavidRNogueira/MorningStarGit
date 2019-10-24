@@ -7,9 +7,9 @@ import Paul from "./Paul.jpg"
 import Norman from "./Norman.jpg"
 import Richard from "./Richard.jpg"
 import Family from "./Family.jpg"
-import LongRaised from "./LongRaised.PNG"
-import ShortRaised from "./ShortRaised.jpeg"
-import Flush from "./Flush.PNG"
+import LongRaised from "./LongRaised.jpg"
+import ShortRaised from "./ShortRaised.jpg"
+import Flush from "./Flush.jpg"
 import BBB from "./BBB.png"
 import {Link} from 'react-router-dom'
 
@@ -21,7 +21,7 @@ const Home = () =>{
         <div className="Home">
             <div className='bannerpic'>
                 <h1 className="bannertext">Customers satisfied.{"\n"}Everytime.</h1>
-               <div className="bannerbtn"><Link to="/contactus"><button className="butn">Get Started</button></Link> </div>   
+                <div className="bannerbtn"><Link to="/contactus" class="butn">Get Started</Link> </div>   
             </div>
 
             <div className="products">
