@@ -10,31 +10,6 @@ li{
 
 h1{
   margin:0;
-
-  
-}
-.navbarlinks p{
-  font-size: 2rem;
-}
-.logo{
-  display: inline-block;
-  width:6.25rem;
-  border:0;
-  margin-left: 4.375rem;
-}
-.navbarlinks{
-  font-family: 'Forum', cursive;
-  font-size:2vw;
-}
-
-.navbarlinks span{
-  font-size:1.5vw;
-  margin-right: 2vw;
-  background-color:gray;
-  border-radius: .5em;
-}
-.navbarlinks span:hover{
-  background-color: darkgrey;
 }
 
 .navbar{
@@ -48,6 +23,28 @@ h1{
   margin:0;
   height:3.375rem;
   z-index: 1;
+}
+.logo{
+  display: inline-block;
+  width: 5rem;
+  border:0;
+}
+.navbarright{
+  font-family: 'Forum', cursive;
+  font-size: 2vw;
+}
+
+.navbarleft--tel{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 8px 0;
+  font-size: 1.5rem;
+  background-color:gray;
+  border-radius: .5em;
+}
+.navbarleft--tel:hover{
+  background-color: darkgrey;
 }
 
 a{
@@ -423,32 +420,26 @@ font-size:1.25em;
 
 
 @media(max-width:1050px){
-  .logo{
-    width:10em;
-    margin:0;
-  }
-  .bannertext{
-    font-size:8em;
-  }
   
   #reviewtext{
     font-size: 1.25em;
     padding-top: .75em;;
   }
-
-  .navbar{
-    height:6em
-  }
   
-  .navbarlinks{
-    font-size:1.5em;
+  .navbarleft--tel {
+    margin-top: 14px;
+    font-size: .8rem;
+  }
+
+  .navbarright{
+    font-size:1.1rem;
     margin-right: 1em;
     
  
   }
 
-  .navbarlinks a{
-    margin:.5em;
+  .navbarright a{
+    margin:.2em;
   }
 
   .products{
@@ -466,9 +457,6 @@ font-size:1.25em;
   .footerimg{
     width:9em;
   }
-  .navbarlinks span{
-    display:none;
-  }
   .aboutustext{
     font-size:1em;
   }
@@ -485,22 +473,24 @@ font-size:1.25em;
 
 
 
-@media(max-width:600px){
+@media(max-width:640px){
 
-  .bannertext{
-font-size:3em;  }
-
-.navbar{
-  position:fixed;
-  top:93.5vh;
-  width:100vw;
-}
-  .navbarlinks{
-    font-size:3.5vw;
- 
+  .bannertext {
+    font-size:3em;
   }
-
-  .navbarlinks a{
+  .navbar {
+    position: relative;
+  }
+  .navbarright{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 10px 0 20px;
+    background: #000;
+    text-align: center;
+    font-size:3.5vw;
+  }
+  .navbarright a{
     margin:.5em;
   }
 
@@ -578,10 +568,6 @@ font-size:3em;  }
       font-style: italic;
     }
 
-    .navbarlinks span{
-      display:none;
-    }
-
     .footerimg{
     width:20vw;
     }
@@ -615,20 +601,11 @@ font-size:3em;  }
 }
 
 @media(max-width:420px){
-  .navbarlinks{
+  .navbarright{
     margin-right:.3em ;
   }
-  .navbarlinks a{
+  .navbarright a{
     margin:.4em;
-  }
- .logo{
-   width:5em;
- }
-  .navbar{
-    z-index:999 ;
-    position:fixed;
-    top:92vh;
-    width:100vw;
   }
 
   .bannertext{
@@ -653,42 +630,27 @@ font-size:3em;  }
 }
 
 @media(max-width:375px){
-  .navbarlinks{
+  .navbarright{
     margin-right:.3em ;
   }
-  .navbarlinks a{
+  .navbarright a{
     margin:.3em;
-  }
-  .navbar{
-    
-    top:94vh;
-    
   }
 }
 @media(max-width:360px){
-  .navbarlinks{
+  .navbarright{
     margin-right:.1em ;
   }
-  .navbarlinks a{
+  .navbarright a{
     margin:.2em;
-  }
-  .navbar{
-    
-    top:92vh;
-    
   }
 }
 @media(max-width:340px){
-  .navbarlinks{
+  .navbarright{
     margin-right:.3em ;
   }
-  .navbarlinks a{
+  .navbarright a{
     margin:.2em;
-  }
-  .navbar{
-    
-    top:92vh;
-    
   }
 
   .footer{
