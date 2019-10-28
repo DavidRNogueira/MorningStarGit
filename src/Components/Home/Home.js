@@ -21,7 +21,7 @@ const Home = () =>{
         <div className="Home">
             <div className='bannerpic'>
                 <h1 className="bannertext">Customers satisfied.{"\n"}Everytime.</h1>
-                <div className="bannerbtn"><Link to="/contactus" class="butn">Get Started</Link> </div>   
+                <div className="bannerbtn butn"><Link to="/contactus">Get Started</Link> </div>   
             </div>
 
             <div className="products">

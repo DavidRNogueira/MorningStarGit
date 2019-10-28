@@ -9,7 +9,7 @@ const NavBar = () =>{
                 <Link to="/">
                     <img className='logo' src={Logo} alt="Logo"/>
                 </Link>
-                <a class='navbarleft--tel' href="tel:+1(602)717-7283">(602) 717-7283</a>
+                <a className='navbarleft--tel' href="tel:+1(602)717-7283">(602) 717-7283</a>
             </div>
             <div className='navbarright'>
                 <Link to='/'>Home</Link>
